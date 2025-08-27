@@ -1,24 +1,300 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciudadanía Digital 1: Atenea</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">🧑‍💻</span> <strong>Ciudadanía Digital Misión 1:Atenea</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Evaluar críticamente decisiones tecnológicas con impacto en la vida personal, académica y social.</li>
+                                        <li>Analizar dilemas sobre el uso de IA (ChatGPT, filtros, bots), el anonimato y la manipulación de imágenes o discursos.</li>
+                                        <li>Comprender el impacto social del anonimato digital.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">Recuerdo Relámpago</strong></li>
+                                        <li><strong class="tactic-highlight">Conexión Ada</strong></li>
+                                        <li><strong class="tactic-highlight">Challenge Express</strong></li>
+                                        <li><strong class="tactic-highlight">Ticket de Salida/Tweet de Aprendizaje</strong></li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Participación activa en el debate socrático sobre el caso "La Voz Prestada".</li>
+                                        <li>"Tweet de Aprendizaje" individual resumiendo la lección sobre ética digital.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat de "Ada" activo y funcionando.</li>
+                                        <li>Presentación de diapositivas.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Asegurar disponibilidad y carga de los dispositivos físicos (ej. tabletas, ordenadores).</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Probar el chat "Ada" para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Recuerdo Relámpago ⏰ 5 minutos</h2>
+                <p>Recordar conceptos clave sobre Ciudadanía Digital</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Recuerdo Relámpago ⏰ 3 minutos</h3>
+                            <p>Revisar diapositiva 2. Recuerdo Relámpago: ¿Cuál sobra?</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Vamos a comenzar con un reto breve, para activar nuestro recuerdos y conocimientos previos. Les daré cuatro frases. Tres tienen que ver con lo que venimos aprendiendo sobre Ciudadanía Digital. Una no encaja. ¿Cuál sobra y por qué? No se trata solo de adivinar, sino de pensar con criterio.<br>Frases proyectadas: <br>• Privacidad en línea<br> • Pensamiento crítico<br> • Cuidado de datos personales <br>• Resolución de conflictos en el aula”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Recuerdo Relámpago ⏰ 0 minutos</h3>
+                            <p>El docente interviene si es necesario</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Por ejemplo: ‘cuidado de datos personales’ se refiere a no compartir información privada, ¿recuerdan? ¿Y ‘pensamiento crítico’? ¿Qué papel juega cuando navegamos o usamos IA?”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Recuerdo Relámpago ⏰ 2 minutos</h3>
+                            <p>Revisar diapositiva 3. Nueva misión: dilemas éticos con tecnología</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Muy bien. Hoy vamos a lanzar un componente clave de su aprendizaje en Gnius Club, uno que se basa en la autonomía y la responsabilidad personal: las misiones de Ciudadanía Digital. A diferencia de nuestras sesiones de tecnología que hacemos juntos aquí, las 16 misiones de Ciudadanía Digital están diseñadas para que ustedes las realicen en casa, a su propio ritmo. Son su responsabilidad. Confiamos en que tomarán la iniciativa para completarlas."
+
+"Estas misiones son cruciales. Mientras en tecnología aprenden a construir, aquí aprenderán a decidir. Hoy, para que todos entiendan la dinámica y la importancia de estos temas, haremos una excepción. Vamos a realizar la primera misión, 'Atenea', todos juntos aquí en clase. Será nuestra sesión de entrenamiento para que vean cómo interactuar con Ada, el tipo de dilemas que explorarán y por qué este conocimiento es tan vital para cualquier persona que crea o usa tecnología hoy en día.”
+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Conexión Ada ⏰ 20 minutos</h2>
+                <p>Explorar dilemas digitales con chatbot</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Conexión Ada ⏰ 20 minutos</h3>
+                            <p>Revisar diapositiva 4. Conexión Ada: Misión Atenea</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“💻 Conéctense a la plataforma. Ada les pedirá su perfil; eso personaliza su experiencia. La clave de hoy es: Misión Atenea. Escríbanla cuando se las pida. Recuerden, esta vez lo haremos todos juntos para que se familiaricen con el proceso. A partir de la próxima misión de Ciudadanía Digital, la realizarán de forma independiente en casa. Así que aprovechen ahora para resolver cualquier duda sobre cómo funciona la plataforma y la interacción con Ada. Avancen a su ritmo.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 5: Conexión Ada ⏰ 0 minutos</h3>
+                            <p>Revisar diapositiva 5. Timer 20 min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: Challenge Express ⏰ 10 minutos</h2>
+                <p>Presentar un dilema ético con IA y anonimato</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 6: Challenge Express ⏰ 1 minutos</h3>
+                            <p>Revisar diapositiva 6. Challenge Express: Caso ‘La Voz Prestada’</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Escuchen esta situación: Un estudiante de su escuela usa una app de IA para imitar la voz de un profesor. Graba un audio con frases falsas y lo comparte en un grupo anónimo. El audio se filtra, se vuelve viral, y el profesor es suspendido mientras se investiga el caso. 🤖 ¿Quién fue responsable: el que creó el audio, el que lo compartió, o todos los que lo difundieron?”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 7: Challenge Express ⏰ 2 minutos</h3>
+                            <p>Revisar diapositiva 7. Preguntas del dilema</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“🧠Vamos a hacer un debate socrático. Todos sientense en círculo. Recuerden que no hay respuestas correctas, pero sí muchas formas de pensar el problema. Estas son las preguntas que guiarán la discusión: 1. ¿El anonimato digital protege o es un arma? 2. ¿Quién es responsable cuando una IA se usa para manipular? 3. ¿Es siempre ético usar IA para crear contenido?”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 8: Challenge Express ⏰ 5 minutos</h3>
+                            <p>Revisar diapositiva 8. Tiempo de discusión (5 min)</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Tomen turnos. Escuchen antes de responder. Pueden estar en desacuerdo, pero argumenten con respeto. No estamos buscando una verdad absoluta, sino ampliar nuestra forma de entender estos temas.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 9: Challenge Express ⏰ 2 minutos</h3>
+                            <p>Revisar diapositiva 9. Objetivos alcanzados</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Gracias por lo que compartieron. Hoy demostraron algo clave: pensar éticamente es cuestionar, escuchar, proponer. La tecnología cambia, pero los dilemas siguen siendo humanos.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                <h2>⚡ Actividad 4: Ticket de Salida/Tweet de Aprendizaje ⏰ 5 minutos</h2>
+                <p>Consolidar lo aprendido en una frase</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 10: Ticket de Salida/Tweet de Aprendizaje ⏰ 2 minutos</h3>
+                            <p>Revisar diapositiva 10. Tweet de Aprendizaje</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Antes de nuestra reflexión final, hablemos de cómo Gnius Club recompensa su compromiso, tanto aquí en clase como en casa. Este sistema se llama Mon-e, nuestra moneda virtual."
+
+"¿Cómo ganan Mon-e?"
+
+"Por cada misión de tecnología que completen en clase, ganarán 5 Mon-e. Si todo el grupo tiene éxito, activamos el BONO DE EQUIPO y todos se llevan 10 Mon-e."
+"Por cada misión de Ciudadanía Digital que completen en casa, ganan 10 Mon-e. Esto es clave: completar estas misiones de autoaprendizaje es la forma más consistente y valiosa de acumular Mon-e."
+
+"¿Para qué sirve el Mon-e?" "Podrán canjear su Mon-e por horas de impresión 3D para dar vida a sus proyectos e ideas. Es una recompensa directa por su dedicación."
+
+"Y aquí está la misma Regla de Oro, que es aún más importante para ustedes:" "NO PODRÁN CANJEAR SU MON-E hasta que hayan completado sus 16 lecciones de Ciudadanía Digital. Su iniciativa para completar estas misiones en casa es la llave que desbloquea sus recompensas. Esto asegura que están desarrollando no solo sus habilidades técnicas, sino también su juicio ético como creadores independientes y responsables. Es la prueba de que están listos para liderar."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 11: Ticket de Salida/Tweet de Aprendizaje ⏰ 2 minutos</h3>
+                            <p>Leer en parejas sus frases</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Compartan su tweet con alguien más. ¿Qué escribió la otra persona? ¿Les hizo pensar algo distinto? La ética también se construye dialogando.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 12: Ticket de Salida/Tweet de Aprendizaje ⏰ 1 minutos</h3>
+                            <p>Revisar diapositiva 11. Cierre final</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Hoy usaron su criterio para pensar decisiones que no siempre son fáciles y experimentaron cómo serán sus misiones con Ada. La responsabilidad de usar IA, crear contenido o mantenerse anónimos ahora también es suya. A partir de la próxima semana, estén atentos a su dashboard en Gnius Space, porque su siguiente misión de Ciudadanía Digital se activará para que la completen en casa. Gracias por pensar, escuchar y cuestionar con honestidad hoy. ¡Nos vemos en la próxima sesión de tecnología!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
